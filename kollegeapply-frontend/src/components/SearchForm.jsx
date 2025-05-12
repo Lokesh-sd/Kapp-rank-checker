@@ -50,7 +50,7 @@ const SearchForm = () => {
     setResults(null);
 
     try {
-      const response = await axios.post("http://localhost:8000/api/check-ranking", { keyword });
+      const response = await axios.post("https://kapp-rank-checker-1.onrender.com/api/check-ranking", { keyword });
       const searchResults = response.data;
       setResults(searchResults);
        updateHistory(keyword, searchResults);
