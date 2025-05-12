@@ -12,7 +12,7 @@ const API_URL = 'https://serpapi.com/search';
 // CORS configuration
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production'
-    ? ['https://your-production-domain.com']
+    ? ['https://kapp-rank-checker.vercel.app/']
     : ['http://localhost:5173']
 };
 
